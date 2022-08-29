@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .container{ max-width: 1440px; height: 100vh; display: flex; align-items: center; justify-content: center; background-color: hsl(30, 38%, 92%);}
+    .card{width: 400px; height: 300px; border-radius: 10px;  display: flex; flex-direction: row; background-color: white; }
+    
+    .isi {margin: 16px;} 
+    .isi h2{font-size: 24px;  margin-top: 0px; font-weight: 2000;}
+    .isi h5{margin-bottom: 8px; color: hsl(0, 0%, 34%); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 8px;}
+    .isi .hrg{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 8px; display: flex; flex-direction: row; align-items: center; color:  hsl(158, 36%, 37%);}
+    .isi .hrg s{margin-left: 8px; font-size: 12px; }
+    .btn a{text-decoration: none; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 10px;}
+    .btn {align-items: center;  text-decoration: none; background-color:  hsl(158, 36%, 37%); margin-top: 16px; display: flex; justify-content: center; color: black; border-radius: 5px;}
+    .btn:hover{ background-color: hsl(159, 33%, 23%); transition: all ease-in-out .24s;}
+    .isi p {margin-top: 8px; font-size: 12px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 50; color: hsl(0, 0%, 34%);}
+    img {object-fit: cover; width:200px; height: 300px; border-bottom-left-radius: 10px; border-top-left-radius: 10px;}
+
+    
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+        <div class="gam"><img src="/product-preview-card-component-main/product-preview-card-component-main/images/image-product-desktop.jpg" alt=""></div>
+        <div class="isi">
+          <h5>P E R F U M E</h5>
+          <h2> Gabrielle  </h2>
+          <h2>Essence Eau</h2>
+          <h2>De Parfum</h2>
+          <p>  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+            <div class="hrg">
+            <h3>$149.99</h3>  <s>$169.99</s>
+          </div>
+            <div class="btn">
+              <a href=""> <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>Add to Cart</a>
+              </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
